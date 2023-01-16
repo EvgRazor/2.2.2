@@ -8,16 +8,25 @@ public class Car {
     private String brand;
     private double value;
     private String color;
+    private int id;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public Car () {
 
     }
 
-    public Car(String brand, double value, String color) {
+    public Car(String brand, double value, String color, int id) {
         this.brand = brand;
         this.value = value;
         this.color = color;
+        this.id =  id;
     }
 
     public String getBrand() {
